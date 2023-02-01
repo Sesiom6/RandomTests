@@ -33,7 +33,7 @@ class Word:
 class Hangman():
     def __init__(self, class_word):
         self.word_class = class_word
-        self._life = 5
+        self._life = 3
         self._typed = []
               
     def show_status(self):
@@ -49,14 +49,14 @@ class Hangman():
         os.system('cls')
         while True:
             self.show_status()
-            letter_player = input('[J-2] Adivinhe a letra: ')
+            letter_player = input('Adivinhe a letra: ')
             os.system('cls')
             if self.is_valid_letter(letter_player):
                 self._typed.append(letter_player)
                 if not self.word_class.tem_letra(letter_player):
                     self._life -= 1
                     if self._life == 0:
-                        bad = '\033[31m'+f'Vc tem {self._life} vidas Fim de Jogo !'+'\033[0;0m'
+                        bad = '\033[31m'+f'Você tem {self._life} vidas Fim de Jogo !'+'\033[0;0m'
                         print(bad.center(55),'\n'*10)
                         break
             if self.word_class.completed():
@@ -68,7 +68,7 @@ class Hangman():
 if __name__ == '__main__':
     os.system('cls')
     while True:
-        player_word = input('[J-1] Digite uma Palavra ou Enter p/ encerrar: ').replace(' ','')
+        player_word = input('Digite uma Palavra ou Enter p/ encerrar: ').replace(' ','')
         if player_word == '':
             break
         if player_word.isalpha():
