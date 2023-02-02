@@ -1,0 +1,1 @@
+Detector de texto simples em python para treino.
