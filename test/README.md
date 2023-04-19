@@ -1,2 +1,0 @@
-#Simple chat
-EzOps challenge.
