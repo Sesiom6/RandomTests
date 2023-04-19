@@ -69,3 +69,6 @@ resource "aws_instance" "Apache php" {
               systemctl start docker
               docker run -d -p 80:80 php:7.4-apache
               docker run -d -p 5432
+              
+EOF
+}
