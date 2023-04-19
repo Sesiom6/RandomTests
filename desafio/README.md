@@ -1,2 +1,2 @@
-#Desafio
-Um desafio que proposto que será completado ao ter mais tempo.
+# Desafio
+Um desafio proposto que será completado ao ter mais tempo.
