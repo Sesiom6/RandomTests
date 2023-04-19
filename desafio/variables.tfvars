@@ -1,0 +1,5 @@
+aws_region = "us-west-2"
+instance_ami = "ami-0103f211a154d64a6"
+instance_type = "t2.micro"
+access_key = ""
+secret_key = ""
